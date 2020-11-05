@@ -1,0 +1,81 @@
+set cut_paste_input [stack 0]
+version 10.5 v5
+Read {
+ inputs 0
+ file L:/0040.Medium/shots/0005_mot/0005_mot_0020/render/0005_mot_0020_sRnd_v2015/0005_mot_0020_sRnd_v2015.MotionVectors.%04d.exr
+ format "3840 2160 0 0 3840 2160 1 UHD_4K"
+ first 1009
+ last 1067
+ origfirst 1009
+ origlast 1067
+ origset true
+ name Read26
+ selected true
+ xpos 2734
+ ypos -528
+}
+set N63c33000 [stack 0]
+push $N63c33000
+Dot {
+ name Dot11
+ selected true
+ xpos 2902
+ ypos -328
+}
+ShuffleCopy {
+ inputs 2
+ alpha alpha2
+ black red
+ white green
+ red2 blue
+ out2 forward
+ name ShuffleCopy4
+ selected true
+ xpos 2868
+ ypos -207
+}
+VectorBlur {
+ uv forward
+ grow_bbox 10
+ method forward
+ name VectorBlur5
+ selected true
+ xpos 2868
+ ypos -165
+}
+Read {
+ inputs 0
+ file L:/0040.Medium/shots/0005_mot/0005_mot_0020/render/0005_mot_0020_sRnd_v2012/0005_mot_0020_sRnd_v2012.%04d.exr
+ format "1920 1080 0 0 1920 1080 1 HD_1080"
+ first 1009
+ last 1067
+ origfirst 1009
+ origlast 1067
+ origset true
+ colorspace "Utility - Linear - sRGB"
+ name Read28
+ selected true
+ xpos 3073
+ ypos -278
+}
+ShuffleCopy {
+ inputs 2
+ alpha alpha2
+ black red
+ white green
+ red2 blue
+ out2 forward
+ name ShuffleCopy8
+ selected true
+ xpos 3039
+ ypos -79
+}
+VectorBlur {
+ uv forward
+ grow_bbox 10
+ method forward
+ name VectorBlur4
+ selected true
+ xpos 3014
+ ypos 38
+}
