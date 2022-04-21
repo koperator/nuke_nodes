@@ -1,0 +1,489 @@
+set cut_paste_input [stack 0]
+version 10.5 v5
+push $cut_paste_input
+Grade {
+ blackpoint 0.06
+ name Grade76
+ selected true
+ xpos -3343
+ ypos -11614
+}
+Dot {
+ name Dot83
+ selected true
+ xpos -3309
+ ypos -11349
+}
+set N60d6c800 [stack 0]
+Dot {
+ name Dot95
+ selected true
+ xpos -3661
+ ypos -11349
+}
+Dot {
+ name Dot100
+ selected true
+ xpos -3661
+ ypos -9079
+}
+set N60d6c000 [stack 0]
+Shuffle {
+ alpha white
+ name Shuffle24
+ selected true
+ xpos -3518
+ ypos -9153
+}
+push $N60d6c800
+Dot {
+ name Dot101
+ selected true
+ xpos -2858
+ ypos -11349
+}
+Keyer {
+ operation "luminance key"
+ name Keyer1
+ selected true
+ xpos -2892
+ ypos -11188
+}
+Premult {
+ name Premult20
+ selected true
+ xpos -2892
+ ypos -11107
+}
+Shuffle {
+ alpha black
+ name Shuffle25
+ selected true
+ xpos -2892
+ ypos -11040
+}
+Grade {
+ white 0.4
+ white_clamp true
+ name Grade75
+ selected true
+ xpos -2892
+ ypos -10880
+}
+set N60daa800 [stack 0]
+Dot {
+ name Dot102
+ selected true
+ xpos -2858
+ ypos -10686
+}
+set N60daa400 [stack 0]
+Dot {
+ name Dot103
+ selected true
+ xpos -2858
+ ypos -10493
+}
+set N60daa000 [stack 0]
+Dot {
+ name Dot104
+ selected true
+ xpos -2858
+ ypos -10313
+}
+set N60dd7c00 [stack 0]
+Dot {
+ name Dot105
+ selected true
+ xpos -2858
+ ypos -10118
+}
+set N60dd7800 [stack 0]
+Dot {
+ name Dot106
+ selected true
+ xpos -2858
+ ypos -9922
+}
+set N60dd7400 [stack 0]
+Dot {
+ name Dot107
+ selected true
+ xpos -2858
+ ypos -9727
+}
+set N60dd7000 [stack 0]
+Blur {
+ channels {{{parent.Blur15.channels}}}
+ size 1280
+ crop false
+ name Blur27
+ selected true
+ xpos -2524
+ ypos -9737
+}
+push $N60dd7000
+Blur {
+ channels {{{parent.Blur15.channels}}}
+ size 960
+ crop false
+ name Blur28
+ selected true
+ xpos -3016
+ ypos -9737
+}
+push $N60dd7000
+Blur {
+ channels {{{parent.Blur15.channels}}}
+ size 520
+ crop false
+ name Blur29
+ selected true
+ xpos -2780
+ ypos -9737
+}
+clone node5977b200|Switch|10700 Switch {
+ inputs 3
+ which {{type}}
+ name Switch4
+ selected true
+ xpos -3016
+ ypos -9691
+}
+set C5977b200 [stack 0]
+Multiply {
+ value 3.814697266
+ name Multiply1
+ selected true
+ xpos -3172
+ ypos -9737
+}
+push $N60dd7400
+Blur {
+ channels {{{parent.Blur15.channels}}}
+ size 640
+ crop false
+ name Blur30
+ selected true
+ xpos -2524
+ ypos -9932
+}
+push $N60dd7400
+Blur {
+ channels {{{parent.Blur15.channels}}}
+ size 520
+ crop false
+ name Blur31
+ selected true
+ xpos -3026
+ ypos -9932
+}
+push $N60dd7400
+Blur {
+ channels {{{parent.Blur15.channels}}}
+ size 320
+ crop false
+ name Blur32
+ selected true
+ xpos -2773
+ ypos -9932
+}
+clone $C5977b200 {
+ inputs 3
+ xpos -3026
+ ypos -9860
+ selected true
+}
+Multiply {
+ value 3.051757813
+ name Multiply2
+ selected true
+ xpos -3171
+ ypos -9932
+}
+push $N60dd7800
+Blur {
+ channels {{{parent.Blur15.channels}}}
+ size 320
+ crop false
+ name Blur33
+ selected true
+ xpos -2533
+ ypos -10128
+}
+push $N60dd7800
+Blur {
+ channels {{{parent.Blur15.channels}}}
+ size 280
+ crop false
+ name Blur34
+ selected true
+ xpos -3012
+ ypos -10128
+}
+push $N60dd7800
+Blur {
+ channels {{{parent.Blur15.channels}}}
+ size 200
+ crop false
+ name Blur35
+ selected true
+ xpos -2768
+ ypos -10133
+}
+clone $C5977b200 {
+ inputs 3
+ xpos -3025
+ ypos -10060
+ selected true
+}
+Multiply {
+ value 2.44140625
+ name Multiply3
+ selected true
+ xpos -3173
+ ypos -10128
+}
+push $N60dd7c00
+Blur {
+ channels {{{parent.Blur15.channels}}}
+ size 160
+ crop false
+ name Blur36
+ selected true
+ xpos -2530
+ ypos -10323
+}
+push $N60dd7c00
+Blur {
+ channels {{{parent.Blur15.channels}}}
+ size 160
+ crop false
+ name Blur37
+ selected true
+ xpos -3007
+ ypos -10323
+}
+push $N60dd7c00
+Blur {
+ channels {{{parent.Blur15.channels}}}
+ size 120
+ crop false
+ name Blur38
+ selected true
+ xpos -2771
+ ypos -10323
+}
+clone $C5977b200 {
+ inputs 3
+ xpos -3007
+ ypos -10262
+ selected true
+}
+Multiply {
+ value 1.953125
+ name Multiply4
+ selected true
+ xpos -3172
+ ypos -10323
+}
+push $N60daa000
+Blur {
+ channels {{{parent.Blur15.channels}}}
+ size 80
+ crop false
+ name Blur39
+ selected true
+ xpos -2531
+ ypos -10503
+}
+push $N60daa000
+Blur {
+ channels {{{parent.Blur15.channels}}}
+ size 80
+ crop false
+ name Blur40
+ selected true
+ xpos -3009
+ ypos -10503
+}
+push $N60daa000
+Blur {
+ channels {{{parent.Blur15.channels}}}
+ size 80
+ crop false
+ name Blur41
+ selected true
+ xpos -2774
+ ypos -10503
+}
+clone $C5977b200 {
+ inputs 3
+ xpos -3009
+ ypos -10440
+ selected true
+}
+Multiply {
+ value 1.5625
+ name Multiply5
+ selected true
+ xpos -3171
+ ypos -10503
+}
+push $N60daa400
+Blur {
+ channels {{{parent.Blur15.channels}}}
+ size 40
+ crop false
+ name Blur42
+ selected true
+ xpos -2530
+ ypos -10696
+}
+push $N60daa400
+Blur {
+ channels {{{parent.Blur15.channels}}}
+ size 40
+ crop false
+ name Blur43
+ selected true
+ xpos -2968
+ ypos -10696
+}
+push $N60daa400
+Blur {
+ channels {{{parent.Blur15.channels}}}
+ size 40
+ crop false
+ name Blur44
+ selected true
+ xpos -2772
+ ypos -10696
+}
+clone $C5977b200 {
+ inputs 3
+ xpos -3011
+ ypos -10597
+ selected true
+}
+Multiply {
+ value 1.25
+ name Multiply6
+ selected true
+ xpos -3174
+ ypos -10696
+}
+push $N60d6c800
+push $N60daa800
+Dot {
+ name Dot108
+ selected true
+ xpos -2495
+ ypos -10876
+}
+Blur {
+ size 40
+ name Blur45
+ selected true
+ xpos -2529
+ ypos -10776
+}
+push $N60daa800
+Blur {
+ size 40
+ name Blur46
+ selected true
+ xpos -3002
+ ypos -10886
+}
+push $N60daa800
+Blur {
+ size 40
+ name Blur47
+ selected true
+ xpos -2768
+ ypos -10849
+}
+clone $C5977b200 {
+ inputs 3
+ xpos -3002
+ ypos -10770
+ selected true
+}
+Multiply {
+ name Multiply7
+ selected true
+ xpos -3180
+ ypos -10873
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Plus1
+ selected true
+ xpos -3343
+ ypos -10867
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Plus2
+ selected true
+ xpos -3343
+ ypos -10690
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Plus3
+ selected true
+ xpos -3343
+ ypos -10497
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Plus4
+ selected true
+ xpos -3343
+ ypos -10317
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Plus5
+ selected true
+ xpos -3343
+ ypos -10122
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Plus6
+ selected true
+ xpos -3343
+ ypos -9926
+}
+Merge2 {
+ inputs 2
+ operation plus
+ name Plus14
+ selected true
+ xpos -3343
+ ypos -9731
+}
+push $N60d6c000
+Keymix {
+ inputs 3
+ name Keymix2
+ selected true
+ xpos -3343
+ ypos -9089
+}
+Grade {
+ whitepoint 13
+ name Grade71
+ selected true
+ xpos -3343
+ ypos -8905
+}
