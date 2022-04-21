@@ -1,0 +1,151 @@
+set cut_paste_input [stack 0]
+version 10.5 v5
+BackdropNode {
+ inputs 0
+ name BackdropNode2
+ tile_color 0x7171c600
+ label match_light_setup
+ note_font_size 42
+ selected true
+ xpos 2898
+ ypos 1382
+ bdwidth 934
+ bdheight 729
+}
+Read {
+ inputs 0
+ file l:/0023.MTM/shots/sc04/sc04_sh0820/render/sc04_sh0820_sRnd_Singapore_FrstPlan_v005/CamL/sc04_sh0820_sRnd_Singapore_FrstPlan_v005.%04d.exr
+ format "1920 1080 0 0 1920 1080 1 HD_1080"
+ first 999
+ last 1125
+ origfirst 999
+ origlast 1125
+ origset true
+ name Read9
+ selected true
+ xpos 3205
+ ypos 1684
+}
+set Nd357800 [stack 0]
+push $Nd357800
+Grade {
+ add 0.0001
+ name Grade19
+ selected true
+ xpos 3020
+ ypos 1759
+}
+Read {
+ inputs 0
+ file l:/0023.MTM/shots/sc04/sc04_sh0820/render/sc04_sh0820_sRnd_NewYork_front_v003/CamL/sc04_sh0820_sRnd_NewYork_front_v003.DiffuseFilter.%04d.exr
+ format "1920 1080 0 0 1920 1080 1 HD_1080"
+ first 999
+ last 1125
+ origfirst 999
+ origlast 1125
+ origset true
+ name Read10
+ selected true
+ xpos 2908
+ ypos 1702
+}
+Grade {
+ add 0.0001
+ name Grade20
+ selected true
+ xpos 2908
+ ypos 1788
+}
+Merge2 {
+ inputs 2
+ operation divide
+ name Merge1
+ selected true
+ xpos 3003
+ ypos 1890
+}
+ShuffleCopy {
+ inputs 2
+ name ShuffleCopy3
+ selected true
+ xpos 3056
+ ypos 1978
+}
+Premult {
+ name Premult2
+ selected true
+ xpos 3056
+ ypos 2004
+}
+Grade {
+ whitepoint {0.4939819276 0.5333605409 0.7166900635 1}
+ white 2
+ multiply {0.2520844638 0.232645601 0.2072721124 1}
+ name Grade21
+ selected true
+ xpos 3221
+ ypos 2076
+}
+Read {
+ inputs 0
+ file l:/0023.MTM/shots/sc04/sc04_sh0820/render/sc04_sh0820_eRnd_Shanghai_v003/sc04_sh0820_eRnd_Shanghai_v003_tmp.1098.exr
+ format "1920 1080 0 0 1920 1080 1 HD_1080"
+ origset true
+ name Read11
+ selected true
+ xpos 3627
+ ypos 1462
+}
+Grade {
+ add 0.001
+ name Grade22
+ selected true
+ xpos 3651
+ ypos 1558
+}
+Read {
+ inputs 0
+ file l:/0023.MTM/shots/sc04/sc04_sh0820/render/sc04_sh0820_eRnd_Shanghai_v003/sc04_sh0820_eRnd_Shanghai_v003_tmp.DiffuseFilter.1098.exr
+ format "1920 1080 0 0 1920 1080 1 HD_1080"
+ origset true
+ name Read12
+ selected true
+ xpos 3742
+ ypos 1476
+}
+Grade {
+ add 0.001
+ name Grade23
+ selected true
+ xpos 3742
+ ypos 1562
+}
+Merge2 {
+ inputs 2
+ operation divide
+ name Merge10
+ selected true
+ xpos 3674
+ ypos 1636
+}
+Merge2 {
+ inputs 2
+ name Merge11
+ selected true
+ xpos 3627
+ ypos 2081
+}
+Read {
+ inputs 0
+ file l:/0023.MTM/shots/sc04/sc04_sh0820/render/sc04_sh0820_sRnd_NewYork_front_v003/CamL/sc04_sh0820_sRnd_NewYork_front_v003.%04d.exr
+ format "1920 1080 0 0 1920 1080 1 HD_1080"
+ first 999
+ last 1125
+ origfirst 999
+ origlast 1125
+ origset true
+ name Read8
+ selected true
+ xpos 3056
+ ypos 1657
+}
