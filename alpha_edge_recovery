@@ -1,0 +1,70 @@
+set cut_paste_input [stack 0]
+version 10.5 v5
+Read {
+ inputs 0
+ file L:/0023.MTM/shots/sc04/sc04_sh1240/render/sc04_sh1240_sRnd_LasVegas_front_v004/CamL/sc04_sh1240_sRnd_LasVegas_front_v004.%04d.exr
+ format "1920 1080 0 0 1920 1080 1 HD_1080"
+ first 999
+ last 1062
+ origfirst 999
+ origlast 1062
+ origset true
+ name Read44
+ selected true
+ xpos -1124
+ ypos 859
+}
+set N554d4000 [stack 0]
+Grade {
+ multiply 0
+ name Grade109
+ selected true
+ xpos -907
+ ypos 963
+}
+Grade {
+ add 1
+ name Grade110
+ selected true
+ xpos -907
+ ypos 989
+}
+Dot {
+ name Dot24
+ selected true
+ xpos -873
+ ypos 1098
+}
+push $N554d4000
+Expression {
+ expr0 a
+ expr1 a
+ expr2 a
+ name Expression14
+ selected true
+ xpos -1143
+ ypos 1073
+}
+Merge2 {
+ inputs 2
+ operation divide
+ name Merge85
+ selected true
+ xpos -1143
+ ypos 1121
+}
+Grade {
+ blackpoint 1
+ whitepoint 2
+ name Grade111
+ selected true
+ xpos -1143
+ ypos 1169
+}
+Expression {
+ expr3 r
+ name Expression15
+ selected true
+ xpos -1143
+ ypos 1195
+}
