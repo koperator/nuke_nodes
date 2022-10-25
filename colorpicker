@@ -1,0 +1,15 @@
+set cut_paste_input [stack 0]
+version 8.0 v6
+push $cut_paste_input
+NoOp {
+ name NoOp2
+ selected true
+ xpos 824
+ ypos -172
+ addUserKnob {20 User}
+ addUserKnob {12 pixelCoordinate}
+ pixelCoordinate {731 64}
+ addUserKnob {18 pixelValues}
+ pixelValues {{"\[sample this red pixelCoordinate.x pixelCoordinate.y]"} {"\[sample this green pixelCoordinate.x pixelCoordinate.y]"} {"\[sample this blue pixelCoordinate.x pixelCoordinate.y]"}}
+ addUserKnob {6 pixelValues_panelDropped l "panel dropped state" -STARTLINE +HIDDEN}
+}
