@@ -1,0 +1,73 @@
+set cut_paste_input [stack 0]
+version 11.3 v5
+push $cut_paste_input
+Group {
+ name Kope_Fireflyer
+ selected true
+ xpos 2004
+ ypos -765
+}
+ Input {
+  inputs 0
+  name Input1
+  xpos 1452
+  ypos -424
+ }
+ Dot {
+  name Dot7
+  xpos 1486
+  ypos -384
+ }
+ Dot {
+  name Dot5
+  xpos 1480
+  ypos -329
+ }
+set Nc4d37000 [stack 0]
+push $Nc4d37000
+ Sharpen {
+  size 1
+  quality 1
+  name Sharpen4
+  xpos 1368
+  ypos -325
+ }
+ Merge2 {
+  inputs 2
+  operation difference
+  Achannels rgb
+  Bchannels rgb
+  output rgb
+  name Merge28
+  xpos 1375
+  ypos -274
+ }
+ Expression {
+  channel0 none
+  channel1 none
+  channel2 none
+  expr3 (r+g+b)*77
+  name Expression5
+  xpos 1367
+  ypos -224
+ }
+push $Nc4d37000
+ FastMedian {
+  inputs 1+1
+  size 1
+  name FastMedian1
+  xpos 1444
+  ypos -192
+ }
+ Dot {
+  name Dot6
+  xpos 1478
+  ypos -140
+ }
+ Output {
+  name Output1
+  selected true
+  xpos 1444
+  ypos -49
+ }
+end_group
