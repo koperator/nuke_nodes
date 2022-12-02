@@ -1,0 +1,42 @@
+set cut_paste_input [stack 0]
+version 11.3 v5
+Constant {
+ inputs 0
+ channels rgb
+ color 0.18
+ name Constant1
+ selected true
+ xpos 1266
+ ypos 109
+}
+push $cut_paste_input
+ColorCorrect {
+ contrast 0.01
+ name ColorCorrect1
+ selected true
+ xpos 1044
+ ypos 169
+}
+Sharpen {
+ amount 1900
+ size 1
+ name Sharpen1
+ selected true
+ xpos 1051
+ ypos 193
+}
+Merge2 {
+ inputs 2
+ operation difference
+ name Merge11
+ selected true
+ xpos 1098
+ ypos 229
+}
+Grade {
+ multiply 10
+ name Grade15
+ selected true
+ xpos 1099
+ ypos 294
+}
