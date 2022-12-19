@@ -1,0 +1,752 @@
+set cut_paste_input [stack 0]
+version 11.3 v5
+CheckerBoard2 {
+ inputs 0
+ name CheckerBoard4
+ selected true
+ xpos 19748
+ ypos 6412
+}
+Shuffle {
+ alpha white
+ name Shuffle43
+ selected true
+ xpos 19752
+ ypos 6591
+}
+Dot {
+ name Dot42
+ selected true
+ xpos 20104
+ ypos 7620
+}
+set Neec68000 [stack 0]
+Dot {
+ name Dot43
+ selected true
+ xpos 20257
+ ypos 7915
+}
+set Ne48af000 [stack 0]
+push $Ne48af000
+Sharpen {
+ size 1
+ name Sharpen17
+ selected true
+ xpos 20110
+ ypos 7920
+}
+Merge2 {
+ inputs 2
+ operation difference
+ name Merge80
+ selected true
+ xpos 20218
+ ypos 7983
+}
+Grade {
+ multiply 10
+ name Grade78
+ selected true
+ xpos 20217
+ ypos 8039
+}
+Expression {
+ expr0 r+g+b
+ expr1 r+g+b
+ expr2 r+g+b
+ expr3 1
+ name Expression24
+ selected true
+ xpos 20215
+ ypos 8113
+}
+push $Neec68000
+Dot {
+ name Dot44
+ selected true
+ xpos 20142
+ ypos 7912
+}
+set N76669000 [stack 0]
+push $N76669000
+Sharpen {
+ size 1
+ name Sharpen18
+ selected true
+ xpos 20002
+ ypos 7943
+}
+Merge2 {
+ inputs 2
+ operation difference
+ name Merge81
+ selected true
+ xpos 20103
+ ypos 7980
+}
+Grade {
+ multiply 10
+ name Grade79
+ selected true
+ xpos 20102
+ ypos 8035
+}
+Expression {
+ expr0 r+g+b
+ expr1 r+g+b
+ expr2 r+g+b
+ expr3 1
+ name Expression25
+ selected true
+ xpos 20104
+ ypos 8112
+}
+CheckerBoard2 {
+ inputs 0
+ name CheckerBoard3
+ selected true
+ xpos 18997
+ ypos 6371
+}
+Shuffle {
+ alpha white
+ name Shuffle44
+ selected true
+ xpos 19001
+ ypos 6551
+}
+set N766b3800 [stack 0]
+Dot {
+ name Dot55
+ selected true
+ xpos 19623
+ ypos 7687
+}
+set Nf37fbc00 [stack 0]
+Dot {
+ name Dot45
+ selected true
+ xpos 19506
+ ypos 7902
+}
+set N766b2800 [stack 0]
+push $N766b2800
+Sharpen {
+ size 1
+ name Sharpen19
+ selected true
+ xpos 19371
+ ypos 7905
+}
+Merge2 {
+ inputs 2
+ operation difference
+ name Merge82
+ selected true
+ xpos 19467
+ ypos 7970
+}
+Grade {
+ multiply 10
+ name Grade80
+ selected true
+ xpos 19465
+ ypos 8023
+}
+Expression {
+ expr0 r+g+b
+ expr1 r+g+b
+ expr2 r+g+b
+ expr3 1
+ name Expression26
+ selected true
+ xpos 19464
+ ypos 8075
+}
+push $N766b3800
+Dot {
+ name Dot46
+ selected true
+ xpos 19026
+ ypos 6595
+}
+set Nf3f81400 [stack 0]
+Dot {
+ name Dot47
+ selected true
+ xpos 18933
+ ypos 6809
+}
+set Nf3f80400 [stack 0]
+push $Nf3f80400
+Sharpen {
+ size 1
+ name Sharpen20
+ selected true
+ xpos 18789
+ ypos 6821
+}
+Merge2 {
+ inputs 2
+ operation difference
+ name Merge83
+ selected true
+ xpos 18894
+ ypos 6877
+}
+Grade {
+ multiply 10
+ name Grade81
+ selected true
+ xpos 18892
+ ypos 6928
+}
+Expression {
+ expr0 r+g+b
+ expr1 r+g+b
+ expr2 r+g+b
+ expr3 1
+ name Expression27
+ selected true
+ xpos 18884
+ ypos 6997
+}
+CheckerBoard2 {
+ inputs 0
+ name CheckerBoard2
+ selected true
+ xpos 18362
+ ypos 6409
+}
+Shuffle {
+ alpha white
+ name Shuffle45
+ selected true
+ xpos 18368
+ ypos 6583
+}
+Grade {
+ name Grade82
+ selected true
+ xpos 18361
+ ypos 6625
+}
+set Ncbc72800 [stack 0]
+Dot {
+ name Dot48
+ selected true
+ xpos 18395
+ ypos 6729
+}
+set Neeb85c00 [stack 0]
+push $Neeb85c00
+Sharpen {
+ size 1
+ name Sharpen21
+ selected true
+ xpos 18283
+ ypos 6722
+}
+Merge2 {
+ inputs 2
+ operation difference
+ name Merge84
+ selected true
+ xpos 18356
+ ypos 6797
+}
+Grade {
+ multiply 10
+ name Grade83
+ selected true
+ xpos 18354
+ ypos 6852
+}
+Expression {
+ expr0 r+g+b
+ expr1 r+g+b
+ expr2 r+g+b
+ expr3 1
+ name Expression28
+ selected true
+ xpos 18354
+ ypos 6878
+}
+CheckerBoard2 {
+ inputs 0
+ name CheckerBoard1
+ selected true
+ xpos 18161
+ ypos 6382
+}
+Shuffle {
+ alpha white
+ name Shuffle48
+ selected true
+ xpos 18152
+ ypos 6537
+}
+Grade {
+ name Grade84
+ selected true
+ xpos 18158
+ ypos 6610
+}
+set Neeb84400 [stack 0]
+Dot {
+ name Dot49
+ selected true
+ xpos 18233
+ ypos 6682
+}
+set Neeb84000 [stack 0]
+push $Neeb84000
+Sharpen {
+ size 1
+ name Sharpen22
+ selected true
+ xpos 18086
+ ypos 6687
+}
+Merge2 {
+ inputs 2
+ operation difference
+ name Merge85
+ selected true
+ xpos 18194
+ ypos 6750
+}
+Grade {
+ multiply 10
+ name Grade85
+ selected true
+ xpos 18192
+ ypos 6839
+}
+Expression {
+ expr0 r+g+b
+ expr1 r+g+b
+ expr2 r+g+b
+ expr3 r+g+b
+ name Expression29
+ selected true
+ xpos 18187
+ ypos 6878
+}
+Merge2 {
+ inputs 2
+ operation from
+ name Merge86
+ selected true
+ xpos 18292
+ ypos 6954
+}
+Grade {
+ multiply 40
+ name Grade86
+ selected true
+ xpos 18289
+ ypos 7019
+}
+Expression {
+ expr3 r
+ name Expression30
+ selected true
+ xpos 18291
+ ypos 7068
+}
+push $Ncbc72800
+push $Neeb84400
+Merge2 {
+ inputs 2+1
+ name Merge87
+ selected true
+ xpos 18147
+ ypos 7108
+}
+set Ncf830000 [stack 0]
+Dot {
+ name Dot50
+ selected true
+ xpos 18167
+ ypos 7217
+}
+set Ne854fc00 [stack 0]
+push $Ne854fc00
+Sharpen {
+ size 1
+ name Sharpen23
+ selected true
+ xpos 18020
+ ypos 7222
+}
+Merge2 {
+ inputs 2
+ operation difference
+ name Merge88
+ selected true
+ xpos 18128
+ ypos 7285
+}
+Grade {
+ multiply 10
+ name Grade87
+ selected true
+ xpos 18125
+ ypos 7361
+}
+Expression {
+ expr0 r+g+b
+ expr1 r+g+b
+ expr2 r+g+b
+ expr3 r+g+b
+ name Expression31
+ selected true
+ xpos 18141
+ ypos 7430
+}
+set Ne854ec00 [stack 0]
+Merge2 {
+ inputs 2
+ operation from
+ name Merge89
+ selected true
+ xpos 18884
+ ypos 7158
+}
+Grade {
+ multiply 40
+ name Grade88
+ selected true
+ xpos 18808
+ ypos 7239
+}
+Expression {
+ expr3 r
+ name Expression32
+ selected true
+ xpos 18811
+ ypos 7292
+}
+push $Nf3f81400
+push $Ncf830000
+Merge2 {
+ inputs 2+1
+ name Merge90
+ selected true
+ xpos 18932
+ ypos 7365
+}
+set Nc2bcfc00 [stack 0]
+Dot {
+ name Dot51
+ selected true
+ xpos 18758
+ ypos 7403
+}
+set Nc2bcf800 [stack 0]
+push $Nc2bcf800
+Sharpen {
+ size 1
+ name Sharpen24
+ selected true
+ xpos 18611
+ ypos 7408
+}
+Merge2 {
+ inputs 2
+ operation difference
+ name Merge91
+ selected true
+ xpos 18719
+ ypos 7470
+}
+Grade {
+ multiply 10
+ name Grade89
+ selected true
+ xpos 18717
+ ypos 7524
+}
+Expression {
+ expr0 r+g+b
+ expr1 r+g+b
+ expr2 r+g+b
+ expr3 r+g+b
+ name Expression33
+ selected true
+ xpos 18716
+ ypos 7571
+}
+push $Ne854ec00
+Merge2 {
+ inputs 2
+ operation from
+ name Merge92
+ selected true
+ xpos 18421
+ ypos 7489
+}
+Grade {
+ multiply 40
+ name Grade90
+ selected true
+ xpos 18427
+ ypos 7615
+}
+Expression {
+ expr3 r
+ name Expression34
+ selected true
+ xpos 18467
+ ypos 7689
+}
+push $Nc2bcfc00
+Shuffle {
+ alpha white
+ name Shuffle46
+ selected true
+ xpos 18911
+ ypos 7589
+}
+push $Ncf830000
+Shuffle {
+ alpha white
+ name Shuffle47
+ selected true
+ xpos 18424
+ ypos 7262
+}
+Merge2 {
+ inputs 2+1
+ name Merge93
+ selected true
+ xpos 18839
+ ypos 7744
+}
+set Neec27000 [stack 0]
+Dot {
+ name Dot52
+ selected true
+ xpos 18929
+ ypos 7907
+}
+set Neec26c00 [stack 0]
+push $Neec26c00
+Sharpen {
+ size 1
+ name Sharpen25
+ selected true
+ xpos 18782
+ ypos 7912
+}
+Merge2 {
+ inputs 2
+ operation difference
+ name Merge94
+ selected true
+ xpos 18890
+ ypos 7975
+}
+Grade {
+ multiply 10
+ name Grade91
+ selected true
+ xpos 18890
+ ypos 8047
+}
+Expression {
+ expr0 r+g+b
+ expr1 r+g+b
+ expr2 r+g+b
+ expr3 r+g+b
+ name Expression35
+ selected true
+ xpos 18959
+ ypos 8104
+}
+Merge2 {
+ inputs 2
+ operation from
+ name Merge95
+ selected true
+ xpos 19330
+ ypos 8154
+}
+Grade {
+ multiply 40
+ name Grade92
+ selected true
+ xpos 19294
+ ypos 8203
+}
+"c:/_nukeShared/NukeShared_light/Repository/_Toolbar/Andrea Geremia/antialiasing_filter.gizmo" {
+ name antialiasing_filter2
+ selected true
+ xpos 19294
+ ypos 8255
+ channels rgba
+ filter 3
+ tuning 0
+}
+Expression {
+ expr3 r
+ name Expression36
+ selected true
+ xpos 19360
+ ypos 8320
+}
+push $Nf37fbc00
+push $Neec27000
+Merge2 {
+ inputs 2+1
+ name Merge96
+ selected true
+ xpos 19611
+ ypos 8346
+}
+set Ncd49dc00 [stack 0]
+Dot {
+ name Dot53
+ selected true
+ xpos 19636
+ ypos 8468
+}
+set Ncd49d800 [stack 0]
+push $Ncd49d800
+Sharpen {
+ size 1
+ name Sharpen26
+ selected true
+ xpos 19508
+ ypos 8490
+}
+Merge2 {
+ inputs 2
+ operation difference
+ name Merge97
+ selected true
+ xpos 19599
+ ypos 8541
+}
+Grade {
+ multiply 10
+ name Grade93
+ selected true
+ xpos 19595
+ ypos 8625
+}
+Expression {
+ expr0 r+g+b
+ expr1 r+g+b
+ expr2 r+g+b
+ expr3 r+g+b
+ name Expression37
+ selected true
+ xpos 19593
+ ypos 8662
+}
+Merge2 {
+ inputs 2
+ operation from
+ name Merge98
+ selected true
+ xpos 20132
+ ypos 8821
+}
+Grade {
+ multiply 40
+ name Grade94
+ selected true
+ xpos 20138
+ ypos 9094
+}
+Expression {
+ expr3 r
+ name Expression38
+ selected true
+ xpos 20126
+ ypos 9244
+}
+push $Neec68000
+push $Ncd49dc00
+Merge2 {
+ inputs 2+1
+ name Merge99
+ selected true
+ xpos 20076
+ ypos 9481
+}
+set Neaf9d800 [stack 0]
+Dot {
+ name Dot54
+ selected true
+ xpos 20123
+ ypos 9693
+}
+set Neaf9d400 [stack 0]
+push $Neaf9d400
+Sharpen {
+ size 1
+ name Sharpen27
+ selected true
+ xpos 19976
+ ypos 9698
+}
+Merge2 {
+ inputs 2
+ operation difference
+ name Merge100
+ selected true
+ xpos 20084
+ ypos 9761
+}
+Grade {
+ multiply 10
+ name Grade95
+ selected true
+ xpos 20082
+ ypos 9850
+}
+Expression {
+ expr0 r+g+b
+ expr1 r+g+b
+ expr2 r+g+b
+ expr3 r+g+b
+ name Expression39
+ selected true
+ xpos 20089
+ ypos 9943
+}
+Merge2 {
+ inputs 2
+ operation from
+ name Merge101
+ selected true
+ xpos 20338
+ ypos 10050
+}
+Grade {
+ multiply 40
+ name Grade96
+ selected true
+ xpos 20338
+ ypos 10102
+}
+Expression {
+ expr3 r
+ name Expression40
+ selected true
+ xpos 20340
+ ypos 10154
+}
+push $Neec68000
+push $Neaf9d800
+Merge2 {
+ inputs 2+1
+ name Merge102
+ selected true
+ xpos 20603
+ ypos 10253
+}
