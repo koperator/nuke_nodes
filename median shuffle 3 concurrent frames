@@ -1,0 +1,40 @@
+//first shuffle into R2G2B2 and R3G3B3
+
+set cut_paste_input [stack 0]
+version 10.5 v5
+push 0
+push 0
+push $cut_paste_input
+add_layer {R2G2B2 R2G2B2.r2 R2G2B2.g2 R2G2B2.b2}
+ShuffleCopy {
+ inputs 2
+ red red
+ green green
+ blue blue
+ out R2G2B2
+ name ShuffleCopy3
+ selected true
+ xpos -423
+ ypos 1600
+}
+add_layer {R3G3B3 R3G3B3.r3 R3G3B3.g3 R3G3B3.b3}
+ShuffleCopy {
+ inputs 2
+ red red
+ green green
+ blue blue
+ out R3G3B3
+ name ShuffleCopy4
+ selected true
+ xpos -418
+ ypos 1663
+}
+Expression {
+ expr0 "r <= r2 ? (r2 <= r3 ? r2 : (r <= r3 ? r3 : r)) : (r <= r3 ? r : (r2 <= r3 ? r3 : r2))"
+ expr1 "g <= g2 ? (g2 <= g3 ? g2 : (g <= g3 ? g3 : g)) : (g <= g3 ? g : (g2 <= g3 ? g3 : g2))"
+ expr2 "b <= b2 ? (b2 <= b3 ? b2 : (b <= b3 ? b3 : b)) : (b <= b3 ? b : (b2 <= b3 ? b3 : b2))"
+ name ExpressionMedian2
+ selected true
+ xpos -418
+ ypos 1783
+}
