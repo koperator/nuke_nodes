@@ -1,0 +1,22 @@
+
+//replace following camera names in the text with camera you want to morph
+//Camera_TEST_PROJECTION_OVERSCAN
+//CamRS_AXIS_baked
+
+set cut_paste_input [stack 0]
+version 10.5 v5
+push $cut_paste_input
+Camera2 {
+translate {{lerp(CamRS_AXIS_baked.translate.main.x,Camera_TEST_PROJECTION_OVERSCAN.translate.main.x,Camera_BLEND.Blend_factor.main)} {lerp(CamRS_AXIS_baked.translate.main.y,Camera_TEST_PROJECTION_OVERSCAN.translate.main.y,Camera_BLEND.Blend_factor.main)} {lerp(CamRS_AXIS_baked.translate.main.z,Camera_TEST_PROJECTION_OVERSCAN.translate.main.z,Camera_BLEND.Blend_factor.main)}}
+rotate {{"lerp(CamRS_AXIS_baked.rotate.x, Camera_TEST_PROJECTION_OVERSCAN.rotate.x, Camera_BLEND.Blend_factor.main)"} {"lerp(CamRS_AXIS_baked.rotate.y, Camera_TEST_PROJECTION_OVERSCAN.rotate.y, Camera_BLEND.Blend_factor.main)"} {"lerp(CamRS_AXIS_baked.rotate.z, Camera_TEST_PROJECTION_OVERSCAN.rotate.z, Camera_BLEND.Blend_factor.main)"}}
+focal {{"lerp(CamRS_AXIS_baked.focal, Camera_TEST_PROJECTION_OVERSCAN.focal, Camera_BLEND.Blend_factor.main)"}}
+haperture {{"lerp(CamRS_AXIS_baked.haperture, Camera_TEST_PROJECTION_OVERSCAN.haperture, Camera_BLEND.Blend_factor.main)"}}
+vaperture {{"lerp(CamRS_AXIS_baked.vaperture, Camera_TEST_PROJECTION_OVERSCAN.vaperture, Camera_BLEND.Blend_factor.main)"}}
+name Camera_BLEND
+selected true
+xpos -4371
+ypos 1210
+addUserKnob {20 User}
+addUserKnob {7 Blend_factor}
+Blend_factor 1
+}
