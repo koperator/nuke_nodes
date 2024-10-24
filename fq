@@ -1,0 +1,392 @@
+set cut_paste_input [stack 0]
+version 15.0 v5
+push $cut_paste_input
+NoOp {
+ name NoOp1
+ selected true
+ xpos 2119
+ ypos 1521
+ addUserKnob {20 User}
+ addUserKnob {7 blur3 R -1 1}
+ addUserKnob {7 blur9 R -1 1}
+ addUserKnob {7 blur27 R -1 1}
+ addUserKnob {7 blur81 R -1 1}
+ addUserKnob {7 blur243 R -1 1}
+}
+Read {
+ inputs 0
+ file_type exr
+ file X:/Polsat_MBR_230169/vfx/shots/mbr0130/cache/compo/mbr0130_depth/mbr0130_depth_#####.exr
+ localizationPolicy onDemand
+ format "2304 1582 0 0 2304 1582 2 "
+ first 996
+ last 1069
+ frame_mode "start at"
+ origfirst 996
+ origlast 1069
+ origset true
+ colorspace aces_interchange
+ name Read8
+ selected true
+ xpos 3191
+ ypos 1395
+}
+Read {
+ inputs 0
+ file_type mov
+ file X:/Polsat_MBR_230169/vfx/shots/mbr0130/cache/compo/mbr0130_denoise_clean/mbr0130_denoise_clean.mp4
+ localizationPolicy onDemand
+ format "1920 1200 0 0 1920 1200 1 1920x1200"
+ last 74
+ frame_mode "start at"
+ origlast 74
+ origset true
+ colorspace color_picking
+ name Read6
+ selected true
+ xpos 3040
+ ypos 1395
+}
+Grade {
+ inputs 1+1
+ name Grade16
+ selected true
+ xpos 3040
+ ypos 1491
+}
+OCIODisplay {
+ colorspace scene_linear
+ display "sRGB - Display"
+ view "ACES 1.0 - SDR Video"
+ name OCIODisplay9
+ selected true
+ xpos 3040
+ ypos 1515
+}
+Dot {
+ name Dot17
+ selected true
+ xpos 3074
+ ypos 1566
+}
+set Ne2124800 [stack 0]
+Dot {
+ name Dot19
+ selected true
+ xpos 3074
+ ypos 1668
+}
+set Ne2124c00 [stack 0]
+push $Ne2124800
+Dot {
+ name Dot25
+ selected true
+ xpos 2854
+ ypos 1566
+}
+set Ne2125000 [stack 0]
+Blur {
+ size 3
+ name Blur10
+ label "\[value size]"
+ selected true
+ xpos 2820
+ ypos 1599
+}
+Dot {
+ name Dot20
+ selected true
+ xpos 2854
+ ypos 1668
+}
+set Ne2125800 [stack 0]
+Merge {
+ inputs 2
+ operation divide
+ swap true
+ output rgb
+ bbox B
+ name Merge11
+ label "A & B swapped"
+ selected true
+ xpos 2820
+ ypos 1707
+}
+Grade {
+ add -1
+ black_clamp false
+ name Grade31
+ selected true
+ xpos 2820
+ ypos 1953
+}
+Grade {
+ white {{parent.NoOp1.blur3}}
+ black_clamp false
+ name Grade32
+ selected true
+ xpos 2820
+ ypos 2073
+}
+Grade {
+ add 1
+ black_clamp false
+ name Grade33
+ selected true
+ xpos 2820
+ ypos 2217
+}
+push $Ne2125800
+push $Ne2125000
+Dot {
+ name Dot26
+ selected true
+ xpos 2634
+ ypos 1566
+}
+set N32ee0c00 [stack 0]
+Blur {
+ size 9
+ name Blur9
+ label "\[value size]"
+ selected true
+ xpos 2600
+ ypos 1599
+}
+Dot {
+ name Dot21
+ selected true
+ xpos 2634
+ ypos 1668
+}
+set N32ee1400 [stack 0]
+Merge {
+ inputs 2
+ operation divide
+ swap true
+ output rgb
+ bbox B
+ name Merge10
+ label "A & B swapped"
+ selected true
+ xpos 2600
+ ypos 1701
+}
+Grade {
+ add -1
+ black_clamp false
+ name Grade28
+ selected true
+ xpos 2600
+ ypos 1953
+}
+Grade {
+ white {{parent.NoOp1.blur9}}
+ black_clamp false
+ name Grade29
+ selected true
+ xpos 2600
+ ypos 2073
+}
+Grade {
+ add 1
+ black_clamp false
+ name Grade30
+ selected true
+ xpos 2600
+ ypos 2217
+}
+push $N32ee1400
+push $N32ee0c00
+Dot {
+ name Dot28
+ selected true
+ xpos 2414
+ ypos 1566
+}
+set Nc6ed2800 [stack 0]
+Blur {
+ size 27
+ name Blur8
+ label "\[value size]"
+ selected true
+ xpos 2380
+ ypos 1599
+}
+Dot {
+ name Dot22
+ selected true
+ xpos 2414
+ ypos 1668
+}
+set Nc6ed3000 [stack 0]
+Merge {
+ inputs 2
+ operation divide
+ swap true
+ output rgb
+ bbox B
+ name Merge9
+ label "A & B swapped"
+ selected true
+ xpos 2380
+ ypos 1707
+}
+Grade {
+ add -1
+ black_clamp false
+ name Grade25
+ selected true
+ xpos 2380
+ ypos 1953
+}
+Grade {
+ white {{parent.NoOp1.blur27}}
+ black_clamp false
+ name Grade26
+ selected true
+ xpos 2380
+ ypos 2073
+}
+Grade {
+ add 1
+ black_clamp false
+ name Grade27
+ selected true
+ xpos 2380
+ ypos 2217
+}
+push $Nc6ed3000
+push $Nc6ed2800
+Dot {
+ name Dot29
+ selected true
+ xpos 2194
+ ypos 1566
+}
+set Nda2a4400 [stack 0]
+Blur {
+ size 81
+ name Blur7
+ label "\[value size]"
+ selected true
+ xpos 2160
+ ypos 1599
+}
+Dot {
+ name Dot23
+ selected true
+ xpos 2194
+ ypos 1668
+}
+set Nda2a4c00 [stack 0]
+Merge {
+ inputs 2
+ operation divide
+ swap true
+ output rgb
+ bbox B
+ name Merge8
+ label "A & B swapped"
+ selected true
+ xpos 2160
+ ypos 1707
+}
+Grade {
+ add -1
+ black_clamp false
+ name Grade22
+ selected true
+ xpos 2160
+ ypos 1953
+}
+Grade {
+ white {{parent.NoOp1.blur81}}
+ black_clamp false
+ name Grade23
+ selected true
+ xpos 2160
+ ypos 2073
+}
+Grade {
+ add 1
+ black_clamp false
+ name Grade24
+ selected true
+ xpos 2160
+ ypos 2217
+}
+push 0
+push $Nda2a4c00
+push $Nda2a4400
+Dot {
+ name Dot30
+ selected true
+ xpos 1974
+ ypos 1566
+}
+Blur {
+ size 243
+ name Blur6
+ label "\[value size]"
+ selected true
+ xpos 1940
+ ypos 1599
+}
+Merge {
+ inputs 2
+ operation divide
+ swap true
+ output rgb
+ bbox B
+ name Merge7
+ label "A & B swapped"
+ selected true
+ xpos 1940
+ ypos 1707
+}
+Grade {
+ add -1
+ black_clamp false
+ name Grade19
+ selected true
+ xpos 1940
+ ypos 1953
+}
+Grade {
+ white {{parent.NoOp1.blur243}}
+ black_clamp false
+ name Grade20
+ selected true
+ xpos 1940
+ ypos 2073
+}
+Grade {
+ add 1
+ black_clamp false
+ name Grade21
+ selected true
+ xpos 1940
+ ypos 2217
+}
+push $Ne2124c00
+Merge2 {
+ inputs 6+1
+ operation multiply
+ bbox B
+ output rgb
+ name Merge16
+ selected true
+ xpos 3040
+ ypos 2337
+}
+OCIODisplay {
+ colorspace scene_linear
+ display "sRGB - Display"
+ view "ACES 1.0 - SDR Video"
+ invert true
+ name OCIODisplay10
+ selected true
+ xpos 3040
+ ypos 2385
+}
